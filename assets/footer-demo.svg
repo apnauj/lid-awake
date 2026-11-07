@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="250" viewBox="0 0 900 250" role="img" aria-label="The lid-awake button in the Claude Code footer, off and on">
+  <style>
+    .t{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:15px}
+    .dim{fill:#8b8ba7}
+    .txt{fill:#e6e6f0}
+    .cap{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:14px;fill:#6b6b85}
+  </style>
+  <rect width="900" height="250" rx="14" fill="#1e1e2e"/>
+  <circle cx="22" cy="20" r="6" fill="#ff5f56"/><circle cx="42" cy="20" r="6" fill="#ffbd2e"/><circle cx="62" cy="20" r="6" fill="#27c93f"/>
+
+  <!-- state: off -->
+  <text x="24" y="62" class="cap">Off: the lid puts your computer to sleep as usual</text>
+  <line x1="24" y1="78" x2="876" y2="78" stroke="#44445c"/>
+  <text x="24" y="102" class="t txt">❯ keep going while I close the lid</text>
+  <text x="24" y="132" class="t dim">⏵⏵ auto mode on</text>
+  <text x="536" y="132" class="t dim" text-anchor="end">☾ lid sleeps</text>
+  <text x="552" y="132" class="t dim">· 5h ━━──── 2% · ES</text>
+
+  <!-- state: on -->
+  <text x="24" y="172" class="cap">On: the lid can close and the session keeps running</text>
+  <line x1="24" y1="188" x2="876" y2="188" stroke="#44445c"/>
+  <text x="24" y="212" class="t txt">❯ keep going while I close the lid</text>
+  <text x="24" y="238" class="t dim">⏵⏵ auto mode on</text>
+  <text x="536" y="238" class="t" text-anchor="end" fill="#ffb347">☀ lid awake</text>
+  <text x="552" y="238" class="t dim">· 5h ━━──── 2% · ES</text>
+</svg>

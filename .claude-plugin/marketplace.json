@@ -1,0 +1,5 @@
+{
+  "name": "lid-awake",
+  "owner": { "name": "Juan Pablo Alzate" },
+  "plugins": [{ "name": "lid-awake", "source": "./" }]
+}
