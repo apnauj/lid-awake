@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/apnauj/lid-awake/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/apnauj/lid-awake/ci.yml?branch=main&style=flat-square&label=CI"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-ffb347?style=flat-square"></a>
   <img alt="Platforms" src="https://img.shields.io/badge/macOS%20%7C%20Linux%20%7C%20Windows-supported-6f8cff?style=flat-square">
   <img alt="Built with TypeScript" src="https://img.shields.io/badge/TypeScript-TSX-3178c6?style=flat-square&logo=typescript&logoColor=white">
@@ -112,6 +113,27 @@ lid-awake/
 ├── types/index.d.ts        # state contract
 └── assets/                 # README images
 ```
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| macOS toast says it needs the sudoers rule | Run the one-time setup command above, then click the button again. |
+| The button is not visible | The footer needs a terminal wide enough to draw it. Widen the window, then check `/plugin` that `lid-awake` is enabled. |
+| The label says `lid awake` after a crash | The mode survived a hard kill. Click the button once to turn it off. |
+| Linux: toast says `systemd-inhibit` could not hold the lid | You need systemd and a normal desktop session. Check with `systemd-inhibit --list`. |
+| Windows: the lid still sleeps the PC | Some laptops override the lid action in firmware or OEM software. Check `powercfg /query SCHEME_CURRENT SUB_BUTTONS LIDACTION`. |
+
+Still stuck? [Open an issue](https://github.com/apnauj/lid-awake/issues/new/choose) with your system and what the button shows.
+
+## Roadmap
+
+- [ ] Auto-off timer (turn the mode off after a set time)
+- [ ] `/lid` slash command
+- [ ] Linux without systemd
+- [ ] Interactive trailer
+
+Ideas are welcome. See [CONTRIBUTING](CONTRIBUTING.md).
 
 ## Good to know
 

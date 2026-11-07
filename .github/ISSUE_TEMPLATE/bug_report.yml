@@ -1,0 +1,31 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [macOS, Linux, Windows]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Claude Code version
+      description: Run `claude --version`
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did the button show, and what did you expect? Include any toast message.
+    validations:
+      required: true
+  - type: textarea
+    id: state
+    attributes:
+      label: Real state of the machine
+      description: "macOS: `pmset -g | grep SleepDisabled`. Linux: `systemd-inhibit --list`. Windows: `powercfg /query SCHEME_CURRENT SUB_BUTTONS LIDACTION`."
+      render: shell
