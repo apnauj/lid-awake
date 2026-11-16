@@ -13,6 +13,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 - A `/lid` slash command as an alternative to the button.
 - Support for Linux systems without systemd.
 
+## [0.2.1] - 2026-11-16
+
+### Fixed
+- Doubled `· ·` separator when another footer mod (for example a usage meter or narrator) draws next to the button.
+
 ## [0.2.0] - 2026-11-06
 
 ### Added

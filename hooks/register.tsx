@@ -140,7 +140,8 @@ export const register: Register = on => {
     // Leave the engine's mode labels and other plugins' items as they are,
     // and draw the button just to their left.
     const beneath = await next(e)
-    const hasBeneath = e.props.modes.length > 0 || beneath != null
+    // Other mods draw their own separator; only the engine's bare mode labels need ours.
+    const hasModes = e.props.modes.length > 0
 
     return (
       <Box flexDirection="row">
@@ -151,7 +152,7 @@ export const register: Register = on => {
           label={awake ? '☀ lid awake' : '☾ lid sleeps'}
           onPress={toggle}
         />
-        {hasBeneath ? <Text dimColor>{' · '}</Text> : null}
+        {hasModes ? <Text dimColor>{' · '}</Text> : null}
         {beneath}
       </Box>
     )

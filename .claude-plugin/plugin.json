@@ -1,6 +1,6 @@
 {
   "name": "lid-awake",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "One-click footer button that keeps your computer running with the lid closed (macOS, Linux, Windows)",
   "author": { "name": "Juan Pablo Alzate" },
   "license": "MIT",
