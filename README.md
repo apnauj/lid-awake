@@ -36,6 +36,16 @@ A long Claude Code session (a big refactor, a test loop, an overnight run) stops
 
 The button is plain and dim. It sits just left of your other status items, and it lights up when you hover over it.
 
+## Trailer
+
+<p align="center">
+  <a href="assets/trailer.mp4">
+    <img src="assets/trailer-poster.jpg" alt="Watch the 27-second lid-awake trailer" width="80%">
+  </a>
+  <br>
+  <sub>▶ <a href="assets/trailer.mp4">Watch the 27-second trailer</a></sub>
+</p>
+
 ## Install
 
 Inside a Claude Code session:

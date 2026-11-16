@@ -7,6 +7,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ### Added
 - Plugin icon, social preview image, issue templates, contributing guide, CI and troubleshooting section.
+- 27-second trailer (`assets/trailer.mp4`), built with Remotion, linked from the README.
 
 ### Planned
 - Auto-off timer (for example, turn the mode off after 8 hours).
